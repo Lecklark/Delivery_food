@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 const cardsRestaurants = document.querySelector('.cards-restaurants');
 
 
@@ -44,3 +45,14 @@ fetch('https://test-cd381-default-rtdb.firebaseio.com//db/partners.json')
     })
     .catch((error) =>
         console.log(error))
+=======
+const renderItems = (data) => {
+    console.log(data);
+}
+
+fetch("../db/partners.json")
+    .then((response) => response.json())
+    .then((data) => {
+        renderItems(data)
+    })
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 const cardsMenu = document.querySelector('.cards-menu');
 
 const changeTitle = (restaurant) => {
@@ -55,3 +56,16 @@ if (localStorage.getItem('restaurant')) {
 } else {
     window.location.href = '/'
 }
+=======
+const restourant = "tanuki"
+
+const renderItems = (data) => {
+    console.log(data);
+}
+
+fetch(`../db/${restourant}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+        renderItems(data)
+    })
+>>>>>>> Stashed changes
