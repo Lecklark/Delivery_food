@@ -50,8 +50,8 @@ const cart = () => {
             </div>`
             modalBody.append(cartElem);
             sumCart += cartItem.price * cartItem.count;
-            modalPrice.innerText = `${sumCart} ₽`
         });
+        modalPrice.innerText = `${sumCart} ₽`
     }
 
     modalBody.addEventListener('click', (e) => {
@@ -72,8 +72,8 @@ const cart = () => {
     buttonCart.addEventListener('click', () => {
         if (localStorage.getItem('cart')) {
             renderCart(JSON.parse(localStorage.getItem('cart')));
-            modalCart.classList.add('is-open')
         }
+        modalCart.classList.add('is-open')
     })
 
 
